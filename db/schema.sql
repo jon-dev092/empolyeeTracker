@@ -9,7 +9,7 @@ id INT AUTO_INCREMENT PRIMARY KEY,
 name VARCHAR(255) NOT NULL
 );
 
--- Create the roles table
+-- Create the role table
 CREATE TABLE role (
 id INT AUTO_INCREMENT PRIMARY KEY,
 title VARCHAR(255) NOT NULL,
@@ -18,6 +18,7 @@ department_id INT,
 FOREIGN KEY(department_id) REFERENCES department(id) ON DELETE SET NULL
 );
 
+-- Create the employee table
 CREATE TABLE employee (
 id INT AUTO_INCREMENT PRIMARY KEY,
 first_name VARCHAR(255) NOT NULL,

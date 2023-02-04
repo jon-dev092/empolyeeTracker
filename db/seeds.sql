@@ -1,3 +1,5 @@
+-- Preseeded data
+
 INSERT INTO department (name)
 VALUES  
 ("Dev-Ops"),
